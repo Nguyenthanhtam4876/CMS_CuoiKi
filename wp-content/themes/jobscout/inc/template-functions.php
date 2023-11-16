@@ -514,7 +514,7 @@ function jobscout_footer_top(){
     if( $active_sidebars ){ ?>
         <div class="footer-t">
     		<div class="container">
-    			<div class="grid column-<?php echo esc_attr( $sidebar_count ); ?>">
+    			<div class="grid column-1">
                 <?php foreach( $active_sidebars as $active ){ ?>
     				<div class="col">
     				   <?php dynamic_sidebar( $active ); ?>	
@@ -542,8 +542,7 @@ function jobscout_footer_bottom(){ ?>
 			<div class="copyright">            
             <?php
                 jobscout_get_footer_copyright();
-                jobscout_ed_author_link();
-                jobscout_ed_wp_link();
+             
             ?>               
             </div>
 		</div>
