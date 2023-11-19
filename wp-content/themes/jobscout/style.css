@@ -1284,6 +1284,12 @@ form.search-form input.search-submit:focus {
   margin: 0;
   padding: 0;
   list-style: none;
+
+}
+.item-edit .widget ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -1328,18 +1334,30 @@ form.search-form input.search-submit:focus {
   color: #000;
 }
 
+
 .site-footer .widget ol li,
 .site-footer .widget ul li,
 .site-footer .widget ul li a,
 .site-footer .widget ol li a {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.site-footer .widget ol li,
+.site-footer .widget ul li,
+.site-footer .item-edit .widget ul li a,
+.site-footer  .widget ol li a {
   font-weight: bold;
   color: black;
 }
 
 .site-footer .widget ul li {
+  overflow: visible;
+}
+.site-footer .item-edit .widget ul li {
   padding-right: 20px;
   overflow: visible;
 }
+
 
 .site-footer .widget ul li:after {
   display: block;

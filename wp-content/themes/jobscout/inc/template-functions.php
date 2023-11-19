@@ -518,12 +518,12 @@ function jobscout_footer_top(){
             <a href=" <?php echo esc_url( home_url( '/' ) ) ?> " style="color:black;  display: flex;justify-content: center; padding-bottom:10px"> <?php  echo esc_html( get_bloginfo( 'name' ) ) ?>  </a></h3>
     			<div class="grid column-<?php echo esc_attr( $sidebar_count ); ?>">
                 <?php foreach( $active_sidebars as $active ){ ?>
-                    <div class="col">
+                    <div class="col item-edit">
 
-    				   <b><?php dynamic_sidebar( $active ); ?>	</b>
+    				  <?php dynamic_sidebar( $active ); ?>
                     </div>
 
-                    <div class="icon-footer-t" style="text-align: center; margin-top: -70px;padding-bottom:50px">
+                    <div class="icon-footer-t" style="text-align: center; margin-top: -70px;padding-bottom:50px;padding-left:20px">
                         <a href="">
                             <?xml version="1.0" ?><svg id="Layer_1" style="enable-background:new 0 0 1000 1000; width:30px;height:30px" version="1.1" viewBox="0 0 1000 1000" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style type="text/css">
                                 .st0{fill:#3B579D;}
